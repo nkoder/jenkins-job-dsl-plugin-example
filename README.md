@@ -1,6 +1,9 @@
 # jenkins-job-dsl-plugin-example
 
-Example of Jenkins Job DSL Plugin
+Example of Jenkins Job DSL Plugin.
+
+The purpose of this repo is to provide examples of job DSL. These exaple job definitions are available in `dsl/`
+directory. You can read each of them and follow instructions which are provided in comments.
 
 ## Setup
 
@@ -44,11 +47,6 @@ JetBrains IntelliJ IDEA will prompt you to provide Groovy SDK when editing `*.gr
 
 3. Provide `$HOME/.sdkman/candidates/groovy/current` as Groovy SDK location when prompted in IntelliJ IDEA
 
-## Learn
-
-I've prepared a couple of job definitions in `dsl/` directory. You can read each of them and follow instructions
-(they are provided in comments).
-
 ## Further info about Job DSL Plugin
 
 Official:
@@ -84,3 +82,5 @@ Unofficial:
 * job DSL with multi-line shell script
 
 * show that jobs created by seed job are tracked
+
+* job DSL with critical blocks
