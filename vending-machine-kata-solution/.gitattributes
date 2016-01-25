@@ -1,0 +1,7 @@
+# Based on http://stackoverflow.com/a/10855862/1036577
+
+# Auto detect text files and perform LF normalization
+*        text=auto
+
+*.java   text diff=java
+*.md     text

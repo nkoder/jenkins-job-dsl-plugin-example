@@ -1,6 +1,5 @@
 # IntelliJ IDEA files
 .idea/*
-*.iml
 
 # Apple OS X
 .DS_Store
