@@ -1,66 +1,56 @@
 #!/usr/bin/env bash
 
-#
-# Prepare Jenkins
-#
+# abort this script if any command fail
+set -e
+# pipe sequence will result with exit code of last *failed* subcommand
+set -o pipefail
 
-jenkinsHome="./jenkins_home"
+# print every command
+#set -x
+
+script_name="$0"
+
+function log {
+	echo -e "[$script_name] $1"
+}
+
+function downloadIfMissing {
+    sourceUrl="$1"
+    targetFile="$2"
+    if [ ! -f $targetFile ]; then
+        log "Downloading $sourceUrl ..."
+        wget "$sourceUrl" -O "$targetFile"
+    fi
+}
+
 jenkinsWar="./jenkins.war"
-jenkinsWarDownloadLink="http://mirrors.jenkins-ci.org/war/1.645/jenkins.war"
-
-if [ ! -f ${jenkinsWar} ]; then
-    echo "### File ${jenkinsWar} was not found. I will download it..."
-    wget ${jenkinsWarDownloadLink} -O ${jenkinsWar}
-fi
-
-#
-# Prepare plugins
-#
-
+jenkinsHome="./jenkins_home"
 pluginsDir="${jenkinsHome}/plugins"
-
 mkdir -p ${pluginsDir}
 
-greenBallsPluginHpi="${pluginsDir}/greenballs.hpi"
-if [ ! -f ${greenBallsPluginHpi} ]; then
-    echo "### File ${greenBallsPluginHpi} was not found. I will download it..."
-    wget "http://updates.jenkins-ci.org/download/plugins/greenballs/1.15/greenballs.hpi" -O ${greenBallsPluginHpi}
-fi
+function downloadJenkins {
+    jenkinsVersion="$1"
+    jenkinsDownloadUrl="http://mirrors.jenkins-ci.org/war/${jenkinsVersion}/jenkins.war"
+    downloadIfMissing ${jenkinsDownloadUrl} ${jenkinsWar}
+}
 
-jobDslPluginHpi="${pluginsDir}/job-dsl.hpi"
-if [ ! -f ${jobDslPluginHpi} ]; then
-    echo "### File ${jobDslPluginHpi} was not found. I will download it..."
-    wget "http://updates.jenkins-ci.org/download/plugins/job-dsl/1.42/job-dsl.hpi" -O ${jobDslPluginHpi}
-fi
+function downloadPlugin {
+    pluginName="$1"
+    pluginVersion="$2"
+    pluginDownloadUrl="http://updates.jenkins-ci.org/download/plugins/${pluginName}/${pluginVersion}/${pluginName}.hpi"
+    pluginHpi="${pluginsDir}/${pluginName}.hpi"
+    downloadIfMissing ${pluginDownloadUrl} ${pluginHpi}
+}
 
-scmApiPluginHpi="${pluginsDir}/scm-api.hpi"
-if [ ! -f ${scmApiPluginHpi} ]; then
-    echo "### File ${scmApiPluginHpi} was not found. I will download it..."
-    wget "http://updates.jenkins-ci.org/download/plugins/scm-api/1.0/scm-api.hpi" -O ${scmApiPluginHpi}
-fi
+downloadJenkins 1.645
 
-gitClientPluginHpi="${pluginsDir}/git-client.hpi"
-if [ ! -f ${gitClientPluginHpi} ]; then
-    echo "### File ${gitClientPluginHpi} was not found. I will download it..."
-    wget "http://updates.jenkins-ci.org/download/plugins/git-client/1.19.0/git-client.hpi" -O ${gitClientPluginHpi}
-fi
+downloadPlugin greenballs 1.15
+downloadPlugin job-dsl 1.42
+downloadPlugin scm-api 1.0
+downloadPlugin git-client 1.19.0
+downloadPlugin git 2.4.1
+downloadPlugin slack 1.8.1
 
-gitPluginHpi="${pluginsDir}/git.hpi"
-if [ ! -f ${gitPluginHpi} ]; then
-    echo "### File ${gitPluginHpi} was not found. I will download it..."
-    wget "http://updates.jenkins-ci.org/download/plugins/git/2.4.1/git.hpi" -O ${gitPluginHpi}
-fi
-
-slackPluginHpi="${pluginsDir}/slack.hpi"
-if [ ! -f ${slackPluginHpi} ]; then
-    echo "### File ${slackPluginHpi} was not found. I will download it..."
-    wget "http://updates.jenkins-ci.org/download/plugins/slack/1.8.1/slack.hpi" -O ${slackPluginHpi}
-fi
-
-#
-# Run Jenkins
-#
-
-echo "### Starting Jenkins on http://localhost:8080/ with home directory set to ${jenkinsHome} ..."
-export JENKINS_HOME="${jenkinsHome}"
+log "Starting Jenkins on http://localhost:8080/ with home directory set to $jenkinsHome ..."
+export JENKINS_HOME="$jenkinsHome"
 java -jar ${jenkinsWar}
