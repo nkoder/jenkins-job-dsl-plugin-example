@@ -36,3 +36,15 @@ Official:
 Unofficial:
 
 * [ sheehan/job-dsl-gradle-example ]( https://github.com/sheehan/job-dsl-gradle-example )
+
+## ToDo
+
+* maven installation (and how it works if you misspell it's name in DSL)
+
+* credentials to remote repo (and issues with misspelling)
+
+* fix maven job to fail on red test
+
+* publishers
+
+* views?
