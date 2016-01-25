@@ -16,7 +16,9 @@ Example of Jenkins Job DSL Plugin
     
 4. Run `create-jobs` job and check that there were no errors
 
-5. (to be continued)
+5. Run created `hello-world` job and check that there were no errors and `Hello world!` was printed in the console
+
+6. (to be continued)
 
 ## Further info about Job DSL Plugin
 
