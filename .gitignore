@@ -9,3 +9,6 @@ jenkins.war
 
 # Jenkins home directory
 jenkins_home/
+
+# temporary
+tmp/

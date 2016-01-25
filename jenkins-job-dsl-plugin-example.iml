@@ -6,5 +6,7 @@
       <excludeFolder url="file://$MODULE_DIR$/jenkins_home" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="groovy-2.4.5" level="application" />
+    <orderEntry type="library" name="groovy-2.4.5" level="application" />
   </component>
 </module>

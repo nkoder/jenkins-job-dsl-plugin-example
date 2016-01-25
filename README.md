@@ -8,13 +8,37 @@ Example of Jenkins Job DSL Plugin
 
 2. Go to [localhost:8080]( http://localhost:8080 )
 
-3. Create job of type "Freestyle project" named `create-jobs` (or any other name you prefer) and configure it:
+3. Setup JDK installations and make sure they are in same order on the list as below:
+   
+    * Oracle Java SE Development Kit 7u80 installation named `jdk-1.7`
+     
+    * Oracle Java SE Development Kit 8u72 installation named `jdk-1.8` 
 
-    * provide this repo checkout directory as Git repository, eg. `file:///Users/yourUserName/workspace/jenkins-job-dsl-plugin-example/`
+4. Setup Maven installations and make sure they are in same order on the list as below:
+   
+    * Apache Maven 2.2.1 installation named `maven-2`
+    
+    * Apache Maven 3.3.9 installation named `maven-3`
+
+5. Create job of type "Freestyle project" named `create-jobs` (or any other name you prefer) and configure it:
+
+    * provide this repo checkout directory as Git repository,
+      eg. `file:///Users/yourUserName/workspace/jenkins-job-dsl-plugin-example/`
     
     * add "Process Job DSLs" build step with `dsl/*` as "DSL Scripts" for "Look on Filesystem" option
     
-4. Run `create-jobs` job and check that there were no errors and couple of jobs were created
+6. Run `create-jobs` job and check that there were no errors and couple of jobs were created
+
+## IntelliJ IDEA
+
+JetBrains IntelliJ IDEA will prompt you to provide Groovy SDK when editing `*.groovy` files. If you want quick and
+ painless Groovy installation then I suggest:
+ 
+1. Install sdkman as decsribed on [http://sdkman.io/install.html]( http://sdkman.io/install.html )
+
+2. Install Groovy with sdkman: `sdk install groovy`
+
+3. Provide `$HOME/.sdkman/candidates/groovy/current` as Groovy SDK location when prompted in IntelliJ IDEA
 
 ## Learn
 
@@ -39,12 +63,18 @@ Unofficial:
 
 ## ToDo
 
-* maven installation (and how it works if you misspell it's name in DSL)
+* job DSL with credentials to remote repo
 
-* credentials to remote repo (and issues with misspelling)
+* job DSL with "publish over SSH" step
 
-* fix maven job to fail on red test
+* job DSL for Node project
 
-* publishers
+* job DSL for project which needs virtual frame buffer (xvfb) to run test (Portractor?) 
 
-* views?
+* view DSL
+ 
+* job DSL with jobs for branches fetched from GitHub API
+
+* job DSL with jobs for branches listed in text file
+
+* job DSL with multi-line shell cript
