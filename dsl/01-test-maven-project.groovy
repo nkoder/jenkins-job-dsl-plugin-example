@@ -12,6 +12,7 @@
  *
  *  6. Mess with assertions in tests of vending-machine-kata-solution project to check that Unit publisher is doing
  *  its job
+ *
  */
 
 def String thisRepositoryDir = System.getProperty('user.dir')

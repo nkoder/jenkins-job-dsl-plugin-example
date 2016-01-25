@@ -27,6 +27,10 @@ Example of Jenkins Job DSL Plugin
     
     * add "Process Job DSLs" build step with `dsl/*` as "DSL Scripts" for "Look on Filesystem" option
     
+    * set "Action for removed jobs" to `Disable`
+    
+    * set "Action for removed views" to `Delete`
+    
 6. Run `create-jobs` job and check that there were no errors and couple of jobs were created
 
 ## IntelliJ IDEA
@@ -77,4 +81,6 @@ Unofficial:
 
 * job DSL with jobs for branches listed in text file
 
-* job DSL with multi-line shell cript
+* job DSL with multi-line shell script
+
+* show that jobs created by seed job are tracked

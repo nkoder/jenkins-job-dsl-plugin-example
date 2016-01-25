@@ -3,6 +3,7 @@
  *
  *  2. Mess with assertions in tests of vending-machine-kata-solution project to check that Slack notifications
  *     are doing their job
+ *
  */
 
 def String thisRepositoryDir = System.getProperty('user.dir')
@@ -19,13 +20,12 @@ job('02-slack-notifications') {
     jdk('jdk-1.8')
     steps {
         maven {
-            mavenInstallation('maven3')
+            mavenInstallation('maven-3')
             rootPOM("${projectDir}/pom.xml")
             goals('test')
         }
     }
     publishers {
-        archiveJunit("${projectDir}/**/surefire-reports/*.xml")
         slackNotifications {
             teamDomain(slackTeamDomain)
             integrationToken(slackIntegrationToken)
