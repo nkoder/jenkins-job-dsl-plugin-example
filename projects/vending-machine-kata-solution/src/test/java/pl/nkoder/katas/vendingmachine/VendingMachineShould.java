@@ -34,7 +34,7 @@ public class VendingMachineShould {
         VendingMachine machine = new VendingMachine(shelves, delayedActions);
 
         assertThat(machine)
-            .displaysMessage("Wybierz produkt")
+            .displaysMessage("Wybierz produktXXXXX_FAILING_TEST_XXXXXX")
             .hasNoProductInTakeOutTray()
             .returnedNoCoins();
     }
