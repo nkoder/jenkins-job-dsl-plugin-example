@@ -12,15 +12,18 @@ Example of Jenkins Job DSL Plugin
 
     * provide this repo checkout directory as Git repository, eg. `file:///Users/yourUserName/workspace/jenkins-job-dsl-plugin-example/`
     
-    * add "Process Job DSLs" build step with `dsl/jobs.groovy` as "DSL Scripts" for "Look on Filesystem" option
+    * add "Process Job DSLs" build step with `dsl/*` as "DSL Scripts" for "Look on Filesystem" option
     
 4. Run `create-jobs` job and check that there were no errors and couple of jobs were created
 
 ## Learn
 
-I've prepared a couple of job definitions in `dsl`
+I've prepared a couple of job definitions in `dsl/` directory. You can read each of them and follow instructions
+(they are provided in comments).
 
 ## Further info about Job DSL Plugin
+
+Official:
 
 * [main site]( https://wiki.jenkins-ci.org/display/JENKINS/Job+DSL+Plugin )
 
@@ -29,3 +32,7 @@ I've prepared a couple of job definitions in `dsl`
 * [Wiki]( https://github.com/jenkinsci/job-dsl-plugin/wiki )
 
 * [API reference]( https://jenkinsci.github.io/job-dsl-plugin/ )
+
+Unofficial:
+
+* [ sheehan/job-dsl-gradle-example ]( https://github.com/sheehan/job-dsl-gradle-example )
