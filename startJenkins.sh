@@ -20,12 +20,30 @@ fi
 pluginsDir="${jenkinsHome}/plugins"
 jobDslPluginHpi="${pluginsDir}/job-dsl.hpi"
 jobDslPluginDownloadLink="http://updates.jenkins-ci.org/download/plugins/job-dsl/1.42/job-dsl.hpi"
+scmApiPluginHpi="${pluginsDir}/scm-api.hpi"
+scmApiPluginDownloadLink="http://updates.jenkins-ci.org/download/plugins/scm-api/1.0/scm-api.hpi"
+gitClientPluginHpi="${pluginsDir}/git-client.hpi"
+gitClientPluginDownloadLink="http://updates.jenkins-ci.org/download/plugins/git-client/1.19.0/git-client.hpi"
+gitPluginHpi="${pluginsDir}/git.hpi"
+gitPluginDownloadLink="http://updates.jenkins-ci.org/download/plugins/git/2.4.1/git.hpi"
 
 mkdir -p ${pluginsDir}
 
 if [ ! -f ${jobDslPluginHpi} ]; then
     echo "### File ${jobDslPluginHpi} was not found. I will download it..."
     wget ${jobDslPluginDownloadLink} -O ${jobDslPluginHpi}
+fi
+if [ ! -f ${scmApiPluginHpi} ]; then
+    echo "### File ${scmApiPluginHpi} was not found. I will download it..."
+    wget ${scmApiPluginDownloadLink} -O ${scmApiPluginHpi}
+fi
+if [ ! -f ${gitClientPluginHpi} ]; then
+    echo "### File ${gitClientPluginHpi} was not found. I will download it..."
+    wget ${gitClientPluginDownloadLink} -O ${gitClientPluginHpi}
+fi
+if [ ! -f ${gitPluginHpi} ]; then
+    echo "### File ${gitPluginHpi} was not found. I will download it..."
+    wget ${gitPluginDownloadLink} -O ${gitPluginHpi}
 fi
 
 #
