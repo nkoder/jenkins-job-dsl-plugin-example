@@ -1,0 +1,13 @@
+# IntelliJ IDEA files
+next-location.iml
+.idea/
+
+# dependencies
+node_modules/
+bower_components/
+
+# build files
+dist/
+
+# gh-pages temporary files
+.publish/

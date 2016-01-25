@@ -1,0 +1,65 @@
+<div class="row">
+    <div class="col-xs-12">
+
+        <div class="panel-group" role="tablist">
+
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab">
+                    <h3 class="panel-title">
+                        <a data-toggle="collapse" href="#hint-panel">
+                            Podpowiedź (kliknij, aby odkryć)
+                        </a>
+                    </h3>
+                </div>
+                <div id="hint-panel" class="panel-collapse collapse" role="tabpanel">
+                    <div class="panel-body">
+                        <p class="text-left">Low, low wall in the bend. in the gap. If there is to the left, search in
+                            the middle, the container likes to roll.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Pałac Brzozowskich</h3>
+                </div>
+                <div class="panel-body">
+
+                    <p class="text-justify">
+                        Palac zostal wzniesiony w roku 1882 dla rodziny Belina-Brzozowskich. Na Wikipedii twierdzą,
+                        że jest neorenesansowy francuski, tablica wmurowana w scianę twierdzi, że neobarokowy.
+                        I weź tu bądź człowieku mądry. Choć jak się patrzy na detale, to rzeczywiście trochę
+                        renesansową Francje przypomina. Dość mocno zniszczony w czasie wojny, po odbudowaniu
+                        zyskał jedno piętro. Ech, te powojenne „odbudowy”.</p>
+
+                    <p class="text-justify">
+                        A teraz ciekawostka. Ponieważ działka jest dość mala, architekt wymyślił sprytne rozwiązanie
+                        dla powozów. Otóż do pałacu prowadzą dwie bramy, wjazdowa i wyjazdowa. Powozem można było
+                        podjechać pod same drzwi frontowe i wyjechać drugą bramą, można też było przejechać na
+                        podwórze i tam zawrócić. Zachowały się metalowe odboje. Polecam też przyjrzeć się latarniom.
+                        Dziś na tyłach pałacu znajduje się powojenny budynek typu galeriowego. Czyli do mieszkań
+                        wchodzi sie z wspólnego balkonu</p>
+
+                    <p class="text-justify">
+                        Skrzynka może być niedostępna podczas obfitych opadów sniegu. Lepiej łupić za dnia, na
+                        turystę z plecakiem, fotografa, cokolwiek. Z gatunku: pod latarnią najciemniej. Zobaczymy,
+                        ile wyżyje. Specjalnie nie ma worka, nie dokładajcie go, tylko wkładajcie skrzynkę
+                        głęboko.</p>
+
+                </div>
+                <div class="panel-footer">
+                    <p class="text-left">
+                        Opis pochodzi ze strony
+                        <a target="_blank"
+                           href="http://www.geocaching.com/geocache/GC2FYX8_brzozowski-family-palace">
+                            geocaching.com
+                        </a>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>

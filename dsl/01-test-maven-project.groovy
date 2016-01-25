@@ -16,7 +16,7 @@
  */
 
 def String thisRepositoryDir = System.getProperty('user.dir')
-def String projectDir = 'vending-machine-kata-solution'
+def String projectDir = 'projects/vending-machine-kata-solution'
 
 job('01-test-maven-project') {
     scm {

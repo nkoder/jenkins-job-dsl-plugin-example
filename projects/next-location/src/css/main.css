@@ -1,0 +1,8 @@
+.more-space-above {
+  margin-top: 15px;
+}
+
+#map-canvas {
+  width: 100%;
+  height: 300px;
+}

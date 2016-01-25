@@ -1,0 +1,64 @@
+<div class="row">
+    <div class="col-xs-12">
+
+        <div class="panel-group" role="tablist">
+
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab">
+                    <h3 class="panel-title">
+                        <a data-toggle="collapse" href="#hint-panel">
+                            Podpowiedź (kliknij, aby odkryć)
+                        </a>
+                    </h3>
+                </div>
+                <div id="hint-panel" class="panel-collapse collapse" role="tabpanel">
+                    <div class="panel-body">
+                        <p class="text-left">two meters high</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Willa Grabkowo</h3>
+                </div>
+                <div class="panel-body">
+                    <p class="text-justify">Władysław Grabski, premier RP i autor reformy walutowej z 1924 roku kupił od
+                        Sulimierskich czterdziestohektarowy folwark stanowiący część wsi Gołąbki, w której w tym czasie
+                        powstał przystanek kolejowy linii Warszawa-Łowicz, i nadał mu nazwę Grabkowo.</p>
+
+                    <p class="text-justify">Wkrótce część majątku przekazał synowi, Władysławowi Janowi Grabskiemu
+                        (pisarzowi) – obecnie ulica Przemysława 7.</p>
+
+                    <p class="text-justify">Ponieważ do Grabkowa (a więc i do Gołąbek) nie było dogodnego dojazdu,
+                        dlatego w 1935/6 Grabscy własnymi środkami wybudowali drogę, łączącą Gołąbki z traktem
+                        prowadzącym z Włoch do Piastowa. Droga ta została wybrukowana czerwonym klinkierem
+                        wyprodukowanym w należących do Grabskiego Zakładach Ceramicznych Ołtarzew (dziś
+                        dzielnica&nbsp; Ożarowa) i dlatego jej kilometrowy odcinek prowadzący do ówczesnej ulicy
+                        Zacisznej (dzisiaj Kadłubka) został nazwany „Czerwoną Drogą”.</p>
+
+                    <p class="text-justify">Majątek Grabkowo, obejmował w swojej głównej części nowo założone sady
+                        z&nbsp;przeszło 1500 drzewami oraz szklarnie i inspekty</p>
+
+                    <p class="text-justify">Po Powstaniu Warszawskim w domu Władysława-Jana Grabskiego zamieszkali&nbsp;
+                        uratowani z Warszawy jego teściowie: Stanisław Wojciechowski, były prezydent RP, wraz z żoną
+                        Marią, którzy mieszkali tu do śmierci. Mieszkała tu również do swojej śmierci przywieziona
+                        z&nbsp; Warszawy na kilka dni przed Powstaniem wdowa po Władysławie Grabskim, Katarzyna
+                        (zm. 1946).</p>
+                </div>
+                <div class="panel-footer">
+                    <p class="text-left">
+                        Opis pochodzi ze strony
+                        <a target="_blank"
+                           href="http://www.geocaching.com/geocache/GC3VWDX_willa-grabkowo-grabkowo-villa">
+                            geocaching.com
+                        </a>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>

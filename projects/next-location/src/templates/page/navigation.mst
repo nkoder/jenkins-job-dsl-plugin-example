@@ -1,0 +1,19 @@
+<div class="col-xs-6">
+    {{#previousId}}
+    <a id="go-back" class="btn btn-primary btn-block" role="button"
+       href="#!locations/{{previousId}}">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        Wróć
+    </a>
+    {{/previousId}}
+</div>
+
+<div class="col-xs-6">
+    {{#nextId}}
+    <a id="go-next" class="btn btn-primary btn-block" role="button"
+       href="#!locations/{{nextId}}" disabled="disabled">
+        Dalej
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+    {{/nextId}}
+</div>

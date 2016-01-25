@@ -1,6 +1,6 @@
 /*
- *  1. Make a couple of commits on `failing_tests` branch to see that job is run after change in repo
- *  (it checks for changes every minute)
+ *  1. Here we are using remote repository with credentials referenced by their name
+ *     (defined in `config.Environment.gitHubCredentials`)
  *
  */
 
@@ -8,17 +8,15 @@ import config.*
 
 def String projectDir = 'projects/vending-machine-kata-solution'
 
-job('04-build-on-commit-on-branch') {
+job('06-remote-repo-with-credentials') {
     scm {
         git {
             remote {
-                url(ThisRepository.localGitUrl())
+                url(ThisRepository.remoteGitUrl())
+                credentials(Environment.gitHubCredentials)
             }
             branch('*/failing_tests')
         }
-    }
-    triggers {
-        scm(CronExpressions.everyMinute)
     }
     jdk(Environment.jdkInstallation)
     steps {

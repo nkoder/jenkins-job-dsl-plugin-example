@@ -7,7 +7,7 @@
  */
 
 def String thisRepositoryDir = System.getProperty('user.dir')
-def String projectDir = 'vending-machine-kata-solution'
+def String projectDir = 'projects/vending-machine-kata-solution'
 
 def String slackTeamDomain = 'PUT_YOUR_SLACK_INTEGRATION_PROPERTIES_HERE'
 def String slackIntegrationToken = 'PUT_YOUR_SLACK_INTEGRATION_PROPERTIES_HERE'

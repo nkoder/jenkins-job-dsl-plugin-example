@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col-xs-12">
+        <form action="javascript:void(0);">
+            <div class="form-group">
+                <label for="user-answer" class="control-label">
+                    <strong>Pytanie</strong>
+                </label>
+
+                <p class="form-control-static">
+                    {{task.question}}
+                </p>
+            </div>
+            <div class="form-group">
+                <label for="user-answer" class="control-label">
+                    <strong>Odpowiedź</strong>
+                </label>
+                <input type="text" class="form-control" id="user-answer"
+                       placeholder="no dajesz&hellip;"/>
+            </div>
+        </form>
+    </div>
+</div>

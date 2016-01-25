@@ -44,12 +44,14 @@ function downloadPlugin {
 
 downloadJenkins 1.645
 
-downloadPlugin greenballs 1.15
+downloadPlugin credentials 1.24
 downloadPlugin job-dsl 1.42
+downloadPlugin greenballs 1.15
 downloadPlugin scm-api 1.0
 downloadPlugin git-client 1.19.0
 downloadPlugin git 2.4.1
 downloadPlugin slack 1.8.1
+downloadPlugin nodejs 0.2.1
 
 log "Starting Jenkins on http://localhost:8080/ with home directory set to $jenkinsHome ..."
 export JENKINS_HOME="$jenkinsHome"

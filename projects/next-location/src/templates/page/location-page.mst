@@ -1,0 +1,15 @@
+<div class="row">
+
+    <div id="page-header"></div>
+
+</div>
+<div class="row more-space-above">
+
+    <div id="navigation"></div>
+
+</div>
+<div class="row more-space-above">
+
+    <div id="page-content"></div>
+
+</div>

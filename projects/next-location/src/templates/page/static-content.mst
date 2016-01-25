@@ -1,0 +1,5 @@
+<div class="col-xs-12">
+    <div class="jumbotron">
+        <p>{{staticText}}</p>
+    </div>
+</div>

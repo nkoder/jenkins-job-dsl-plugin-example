@@ -7,7 +7,7 @@
 
 import config.*
 
-def String projectDir = 'vending-machine-kata-solution'
+def String projectDir = 'projects/vending-machine-kata-solution'
 
 job('03-import-scripts') {
     scm {

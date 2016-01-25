@@ -1,0 +1,13 @@
+<div class="col-xs-12">
+
+    <h2 class="text-uppercase">{{title}}</h2>
+
+    <h4>
+        <small>
+            {{wgs84Coordinate.latitude}}
+            <span class="fa fa-compass"></span>
+            {{wgs84Coordinate.longitude}}
+        </small>
+    </h4>
+
+</div>

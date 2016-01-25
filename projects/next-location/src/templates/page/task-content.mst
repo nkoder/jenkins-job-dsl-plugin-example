@@ -1,0 +1,52 @@
+<div class="col-xs-12">
+
+    <div role="tabpanel" id="super-tabs">
+        <ul class="nav nav-tabs" role="tablist">
+
+            <li role="presentation" class="active"
+                style="width:
+                    {{#geocacheContentFile}}29%{{/geocacheContentFile}}
+                    {{^geocacheContentFile}}50%{{/geocacheContentFile}}
+                    ">
+                <a href="#map-tab" aria-controls="map" role="tab" data-toggle="tab">
+                    <span class="fa fa-map-marker"></span>
+                    Mapa
+                </a>
+            </li>
+
+            <li role="presentation"
+                style="width:
+                    {{#geocacheContentFile}}36%{{/geocacheContentFile}}
+                    {{^geocacheContentFile}}50%{{/geocacheContentFile}}
+                    ">
+                <a href="#task-tab" aria-controls="task" role="tab" data-toggle="tab">
+                    <span class="fa fa-question"></span>
+                    Zagadka
+                </a>
+            </li>
+
+            {{#geocacheContentFile}}
+            <li role="presentation"
+                style="width: 35%"
+                >
+                <a href="#geocache-tab" aria-controls="geocache" role="tab" data-toggle="tab">
+                    <span class="fa fa-archive"></span>
+                    Skrytka
+                </a>
+            </li>
+            {{/geocacheContentFile}}
+
+        </ul>
+        <div class="tab-content">
+
+            <div role="tabpanel" class="more-space-above tab-pane fade in active" id="map-tab"></div>
+
+            <div role="tabpanel" class="more-space-above tab-pane fade" id="task-tab"></div>
+
+            {{#geocacheContentFile}}
+            <div role="tabpanel" class="more-space-above tab-pane fade" id="geocache-tab"></div>
+            {{/geocacheContentFile}}
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,63 @@
+<div class="row">
+    <div class="col-xs-12">
+
+        <div class="panel-group" role="tablist">
+
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab">
+                    <h3 class="panel-title">
+                        <a data-toggle="collapse" href="#hint-panel">
+                            Podpowiedź (kliknij, aby odkryć)
+                        </a>
+                    </h3>
+                </div>
+                <div id="hint-panel" class="panel-collapse collapse" role="tabpanel">
+                    <div class="panel-body">
+                        <p class="text-left">Skwer Wolnego Słowa</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Memoriał Wolnego Słowa</h3>
+                </div>
+                <div class="panel-body">
+
+                    <p class="text-justify">
+                        Memoriał Wolnego Słowa upamiętnia podziemny ruch wydawniczy lat 1976-1989, który walnie
+                        przyczynił się do upadku komunizmu. Dzięki pracy tysięcy twórców, wydawców, redaktorów,
+                        drukarzy, kolporterów i współpracowników w tzw. "drugim obiegu" wydano ponad 7000 książek i
+                        broszur, 3000 tytułów czasopism, a także około stu kaset audio i wideo. Podziemne gazety
+                        rozpowszechniano w nakładach sięgających 100 000 egzemplarzy, a książki - 20 000. Z publikacjami
+                        "drugiego obiegu" przynajmniej raz w życiu zetknął się co czwarty mieszkaniec Polski.
+                    </p>
+
+                    <p class="text-justify">
+                        Memoriał Wolnego Słowa powstał przy ul. Mysiej, przed dawną siedzibą Głównego Urzędu Kontroli
+                        Prasy, Publikacji i Widowisk, komunistycznego urzędu cenzury. Czarny pas w posadzce skweru
+                        symbolizuje interwencję cenzora, a jego przerwanie - zwycięstwo Wolnego Słowa.
+                    </p>
+
+                    <p class="text-justify">
+                        Memoriał Wolnego Słowa wzniesiono pod patronatem Prezydenta RP Bronisława Komorowskiego w 25.
+                        rocznicę wyborów parlamentarnych 1989 roku, symbolizujących koniec komunizmu w Polsce.
+                    </p>
+
+                </div>
+                <div class="panel-footer">
+                    <p class="text-left">
+                        Opis pochodzi ze strony
+                        <a target="_blank"
+                           href="http://www.geocaching.com/geocache/GC56C8W_memorial-wolnego-slowa-free-speech-memorial">
+                            geocaching.com
+                        </a>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
