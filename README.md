@@ -14,11 +14,11 @@ Example of Jenkins Job DSL Plugin
     
     * add "Process Job DSLs" build step with `dsl/jobs.groovy` as "DSL Scripts" for "Look on Filesystem" option
     
-4. Run `create-jobs` job and check that there were no errors
+4. Run `create-jobs` job and check that there were no errors and couple of jobs were created
 
-5. Run created `hello-world` job and check that there were no errors and `Hello world!` was printed in the console
+## Learn
 
-6. (to be continued)
+I've prepared a couple of job definitions in `dsl`
 
 ## Further info about Job DSL Plugin
 
