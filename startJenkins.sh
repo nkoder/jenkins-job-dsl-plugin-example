@@ -18,6 +18,8 @@ fi
 #
 
 pluginsDir="${jenkinsHome}/plugins"
+greenBallsPluginHpi="${pluginsDir}/greenballs.hpi"
+greenBallsPluginDownloadLink="http://updates.jenkins-ci.org/download/plugins/greenballs/1.15/greenballs.hpi"
 jobDslPluginHpi="${pluginsDir}/job-dsl.hpi"
 jobDslPluginDownloadLink="http://updates.jenkins-ci.org/download/plugins/job-dsl/1.42/job-dsl.hpi"
 scmApiPluginHpi="${pluginsDir}/scm-api.hpi"
@@ -29,6 +31,10 @@ gitPluginDownloadLink="http://updates.jenkins-ci.org/download/plugins/git/2.4.1/
 
 mkdir -p ${pluginsDir}
 
+if [ ! -f ${greenBallsPluginHpi} ]; then
+    echo "### File ${greenBallsPluginHpi} was not found. I will download it..."
+    wget ${greenBallsPluginDownloadLink} -O ${greenBallsPluginHpi}
+fi
 if [ ! -f ${jobDslPluginHpi} ]; then
     echo "### File ${jobDslPluginHpi} was not found. I will download it..."
     wget ${jobDslPluginDownloadLink} -O ${jobDslPluginHpi}
