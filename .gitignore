@@ -4,3 +4,9 @@
 
 # Apple OS X
 .DS_Store
+
+# Jenkins executable
+jenkins.war
+
+# Jenkins home directory
+jenkins_home/
