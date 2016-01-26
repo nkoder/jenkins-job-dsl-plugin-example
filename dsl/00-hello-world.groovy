@@ -6,6 +6,9 @@
  *
  *  2. Run this job a couple times more to see that log rotator is doing its job
  *
+ *  3. Break DSL to see that `create-jobs` job will fail on malformed DSL :-)
+ *     For example make typo in `nomToKeep` instruction.
+ *
  */
 
 job('00-hello-world') {
@@ -13,7 +16,7 @@ job('00-hello-world') {
         shell('echo "Hello world!"')
     }
     logRotator {
-        numToKeep(5)
+        numToKeep(3)
     }
 }
 
