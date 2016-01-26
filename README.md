@@ -118,3 +118,5 @@ Unofficial:
 * [Logging]( https://github.com/jenkinsci/job-dsl-plugin/wiki/Job-DSL-Commands#logging )
 
 * [IDE support]( https://github.com/jenkinsci/job-dsl-plugin/wiki/IDE-Support )
+
+* seed job updated (and extended) from DSL (inception! ;-) )

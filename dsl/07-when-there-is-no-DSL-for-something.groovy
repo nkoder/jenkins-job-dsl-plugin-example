@@ -8,8 +8,6 @@
  *
  */
 
-import config.*
-
 def String thisRepositoryDir = System.getProperty('user.dir')
 def String projectDir = 'projects/vending-machine-kata-solution'
 
