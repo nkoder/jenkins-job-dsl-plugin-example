@@ -48,7 +48,7 @@ directory. You can read each of them and follow instructions which are provided 
     * provide this repo checkout directory as Git repository,
       eg. `file:///Users/yourUserName/workspace/jenkins-job-dsl-plugin-example/`
     
-    * add "Process Job DSLs" build step with `dsl/*` as "DSL Scripts" for "Look on Filesystem" option
+    * add "Process Job DSLs" build step with `dsl/*.groovy` as "DSL Scripts" for "Look on Filesystem" option
     
     * set "Action for removed jobs" to `Disable`
     
