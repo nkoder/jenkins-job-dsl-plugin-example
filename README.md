@@ -96,18 +96,15 @@ Unofficial:
 * Jobs generated for branches fetched from GitHub API.
   Generally: [REST API calls]( https://github.com/jenkinsci/job-dsl-plugin/wiki/Real-World-Examples#rest-api-calls )
 
-* Jobs generated for branches listed in text file.
-  Generally: [reading files from workspace]( https://github.com/jenkinsci/job-dsl-plugin/wiki/Job-DSL-Commands#reading-files-from-workspace )
-
 * Job with multi-line shell script
+
+* Job for multi-phase project (with "subjobs")
 
 * Job with critical blocks
 
 * Job with remote shell access
 
 * Job with parameters to choose on start
-
-* DSLs extended with `.with`
 
 * Job with custom XML parts (if something is not provided with Job DSL Plugin)ĶĶ
 
