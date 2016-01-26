@@ -11,8 +11,8 @@ directory. You can read each of them and follow instructions which are provided 
 
 2. I've failed to setup `./runJenkins.sh` to have `credentials` plugin in version `1.24` installed so you have
    to perform this udpate manually. Open [http://localhost:8080/pluginManager/]( http://localhost:8080/pluginManager/ ),
-   select `Credentials Plugin` and click on update button. Then kill Jenkins in your console and run `./runJenkins.sh`
-   again.
+   select `Credentials Plugin` and click on update button. Wait for "Download successfully" status. Then kill Jenkins i
+   n your console and run `./runJenkins.sh` again.
 
 3. Open [http://localhost:8080/pluginManager/advanced]( http://localhost:8080/pluginManager/advanced ) in your browser
    and click button `Check now` (on bottom right corner) to fix NodeJS installation versions list.
@@ -41,7 +41,7 @@ directory. You can read each of them and follow instructions which are provided 
 8. Open [http://localhost:8080/credentials/]( http://localhost:8080/credentials/ ) in your browser and create
    "username with password" global credentials for
    [this GitHub repository]( https://github.com/nkoder/jenkins-job-dsl-plugin-example )
-   and name them `github-credentials`
+   and name them `github-credentials` (`ID` property visible after unfolding "Advanced" options)
    
 9. Create job of type "Freestyle project" named `create-jobs` (or any other name you prefer) and configure it:
 
@@ -83,26 +83,26 @@ Unofficial:
 
 * [ sheehan/job-dsl-gradle-example ]( https://github.com/sheehan/job-dsl-gradle-example )
 
-## ToDo
+## Topics not covered in examples in this repo
 
-* job DSL with "publish over SSH" step
+* Tracking of created jobs by seed job (eg. when you rename job in your DSL)
 
-* job DSL for project which needs virtual frame buffer (xvfb) to run test (Portractor?) 
+* Job with "publish over SSH" step
 
-* view DSL
+* Job which needs virtual frame buffer (xvfb) to run tests (eg. Portractor tests) 
  
-* job DSL with jobs for branches fetched from GitHub API
+* Jobs generated for branches fetched from GitHub API
 
-* job DSL with jobs for branches listed in text file
+* Jobs generated for branches listed in text file
 
-* job DSL with multi-line shell script
+* Job with multi-line shell script
 
-* show that jobs created by seed job are tracked
+* Job with critical blocks
 
-* job DSL with critical blocks
+* Job with remote shell access
 
-* job DSL with remote shell access
+* Job with parameters to choose on start
 
-* DSL of parametrized job
+* Job with custom XML parts (if something is not provided with Job DSL Plugin)ĶĶ
 
-* job DSL with custom XML parts
+* DSLs for views
