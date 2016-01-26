@@ -93,9 +93,11 @@ Unofficial:
 
 * Job which needs virtual frame buffer (xvfb) to run tests (eg. Portractor tests) 
  
-* Jobs generated for branches fetched from GitHub API
+* Jobs generated for branches fetched from GitHub API.
+  Generally: [REST API calls]( https://github.com/jenkinsci/job-dsl-plugin/wiki/Real-World-Examples#rest-api-calls )
 
-* Jobs generated for branches listed in text file
+* Jobs generated for branches listed in text file.
+  Generally: [reading files from workspace]( https://github.com/jenkinsci/job-dsl-plugin/wiki/Job-DSL-Commands#reading-files-from-workspace )
 
 * Job with multi-line shell script
 
@@ -112,3 +114,7 @@ Unofficial:
 * DSLs for views
 
 * Testing DSLs
+
+* [Logging]( https://github.com/jenkinsci/job-dsl-plugin/wiki/Job-DSL-Commands#logging )
+
+* [IDE support]( https://github.com/jenkinsci/job-dsl-plugin/wiki/IDE-Support )

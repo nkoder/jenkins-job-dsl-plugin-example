@@ -3,6 +3,7 @@
  *
  *  2. Sadly, I haven't achieved to have IntelliJ IDEA autocomplete Environment fields for me :-(
  *
+ *  3. For more info see https://github.com/jenkinsci/job-dsl-plugin/wiki/Real-World-Examples#import-other-files-ie-with-class-definitions-into-your-script
  */
 
 import config.*
